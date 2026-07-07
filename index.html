@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parfumerie Soufiane — L'Art du Parfum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-main">Parfumerie Soufiane</span>
+        <span class="nav__logo-sub">منذ ١٩٩٥</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#story">Notre Histoire</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#atelier">Atelier</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img src="assets/hero.jpg" alt="Parfumerie Soufiane" class="hero__img" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content reveal">
+      <p class="hero__eyebrow">— Maison de Parfumerie —</p>
+      <h1 class="hero__title">L'Essence<br /><em>du Luxe</em></h1>
+      <p class="hero__subtitle">جوهر الأناقة في كل قطرة</p>
+      <a href="#collection" class="btn btn--ghost">Découvrir la Collection</a>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ─── STORY ─── -->
+  <section class="story section" id="story">
+    <div class="container">
+      <div class="story__grid">
+        <div class="story__text reveal">
+          <span class="section-label">Notre Histoire</span>
+          <h2 class="section-title">Un héritage<br />de <em>passion</em></h2>
+          <p class="story__body">
+            Fondée avec une vision singulière, Parfumerie Soufiane incarne 
+            l'alliance entre les traditions orientales et le raffinement français. 
+            Chaque flacon renferme une histoire — celle d'un art transmis de 
+            génération en génération.
+          </p>
+          <p class="story__body story__body--ar">
+            كل عطر نصنعه هو رحلة تبدأ بالطبيعة وتنتهي بملامسة روحك.
+            نختار أجود المواد الخام من أرجاء العالم لنقدّم لكم تجربة لا تُنسى.
+          </p>
+          <a href="#collection" class="btn btn--outline">Explorer →</a>
+        </div>
+        <div class="story__visual reveal reveal--right">
+          <div class="story__frame">
+            <img src="assets/p1.jpg" alt="Atelier de parfumerie" />
+          </div>
+          <div class="story__badge">
+            <span>30</span>
+            <small>ans d'excellence</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COLLECTION ─── -->
+  <section class="collection section" id="collection">
+    <div class="container">
+      <div class="collection__header reveal">
+        <span class="section-label">Notre Collection</span>
+        <h2 class="section-title">Créations <em>Exclusives</em></h2>
+        <p class="collection__intro">Cinq essences rares, une signature inimitable</p>
+      </div>
+
+      <div class="products">
+
+        <article class="product reveal">
+          <div class="product__img-wrap">
+            <img src="assets/p1.jpg" alt="Nuit d'Orient" loading="lazy" />
+            <div class="product__hover">
+              <a href="#contact" class="btn btn--gold btn--sm">Demander</a>
+            </div>
+          </div>
+          <div class="product__info">
+            <h3 class="product__name">Nuit d'Orient</h3>
+            <p class="product__note">Oud · Ambre · Rose de Taif</p>
+            <p class="product__note--ar">عود · كهرمان · ورد طائف</p>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__img-wrap">
+            <img src="assets/p2.jpg" alt="Lumière Dorée" loading="lazy" />
+            <div class="product__hover">
+              <a href="#contact" class="btn btn--gold btn--sm">Demander</a>
+            </div>
+          </div>
+          <div class="product__info">
+            <h3 class="product__name">Lumière Dorée</h3>
+            <p class="product__note">Jasmin · Santal · Musc blanc</p>
+            <p class="product__note--ar">ياسمين · صندل · مسك أبيض</p>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__img-wrap">
+            <img src="assets/p3.jpg" alt="Désert Royal" loading="lazy" />
+            <div class="product__hover">
+              <a href="#contact" class="btn btn--gold btn--sm">Demander</a>
+            </div>
+          </div>
+          <div class="product__info">
+            <h3 class="product__name">Désert Royal</h3>
+            <p class="product__note">Bois de oud · Safran · Vanille</p>
+            <p class="product__note--ar">عود خشبي · زعفران · فانيليا</p>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__img-wrap">
+            <img src="assets/p4.jpg" alt="Velours Noir" loading="lazy" />
+            <div class="product__hover">
+              <a href="#contact" class="btn btn--gold btn--sm">Demander</a>
+            </div>
+          </div>
+          <div class="product__info">
+            <h3 class="product__name">Velours Noir</h3>
+            <p class="product__note">Iris · Patchouli · Cuir</p>
+            <p class="product__note--ar">زنبق · باتشولي · جلد</p>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__img-wrap">
+            <img src="assets/p5.jpg" alt="Sérénité" loading="lazy" />
+            <div class="product__hover">
+              <a href="#contact" class="btn btn--gold btn--sm">Demander</a>
+            </div>
+          </div>
+          <div class="product__info">
+            <h3 class="product__name">Sérénité</h3>
+            <p class="product__note">Bergamote · Cèdre · Musc</p>
+            <p class="product__note--ar">برغموت · أرز · مسك</p>
+          </div>
+        </article>
+
+        <article class="product reveal">
+          <div class="product__img-wrap">
+            <img src="assets/p6.jpg" alt="Rose Impériale" loading="lazy" />
+            <div class="product__hover">
+              <a href="#contact" class="btn btn--gold btn--sm">Demander</a>
+            </div>
+          </div>
+          <div class="product__info">
+            <h3 class="product__name">Rose Impériale</h3>
+            <p class="product__note">Rose · Oud rose · Miel</p>
+            <p class="product__note--ar">ورد · عود وردي · عسل</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ATELIER ─── -->
+  <section class="atelier section" id="atelier">
+    <div class="atelier__bg">
+      <img src="assets/hero.jpg" alt="Atelier" />
+      <div class="atelier__overlay"></div>
+    </div>
+    <div class="container atelier__content reveal">
+      <span class="section-label section-label--light">Notre Savoir-Faire</span>
+      <h2 class="section-title section-title--light">L'Atelier<br /><em>Soufiane</em></h2>
+      <p class="atelier__text">
+        Chaque parfum est élaboré à la main, avec une précision horlogère et 
+        une passion sans limite. Nos maîtres parfumeurs sélectionnent les 
+        ingrédients les plus précieux pour créer des œuvres olfactives uniques.
+      </p>
+      <div class="atelier__stats">
+        <div class="atelier__stat">
+          <span class="stat-num">+300</span>
+          <span class="stat-label">Ingrédients Naturels</span>
+        </div>
+        <div class="atelier__stat">
+          <span class="stat-num">30</span>
+          <span class="stat-label">Ans d'Excellence</span>
+        </div>
+        <div class="atelier__stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Passion</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── NEWSLETTER ─── -->
+  <section class="newsletter section" id="contact">
+    <div class="container">
+      <div class="newsletter__inner reveal">
+        <span class="section-label">Restez Informé</span>
+        <h2 class="section-title">Rejoignez notre<br /><em>cercle exclusif</em></h2>
+        <p class="newsletter__sub">انضم إلى عالمنا العطري الحصري</p>
+        <form class="newsletter__form" id="newsletterForm">
+          <div class="newsletter__field">
+            <input
+              type="email"
+              placeholder="Votre adresse email"
+              class="newsletter__input"
+              id="emailInput"
+              required
+            />
+            <button type="submit" class="btn btn--gold">S'abonner</button>
+          </div>
+          <p class="newsletter__success" id="formSuccess">Merci ! Vous êtes maintenant membre de notre cercle. ✦</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__name">Parfumerie Soufiane</p>
+        <p class="footer__tagline">L'art du parfum depuis 1995</p>
+        <p class="footer__tagline--ar">فن العطر منذ ١٩٩٥</p>
+      </div>
+      <div class="footer__links">
+        <a href="#story">Histoire</a>
+        <a href="#collection">Collection</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Parfumerie Soufiane. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
