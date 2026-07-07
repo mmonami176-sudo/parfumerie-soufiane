@@ -124,7 +124,11 @@
   /* ─── SMOOTH ANCHOR SCROLL (offset for fixed nav) ─── */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
+      const href = this.getAttribute('href');
+      // Skip placeholder links (href="#") — don't try to querySelector('#')
+      if (!href || href === '#') return;
+      let target;
+      try { target = document.querySelector(href); } catch (_) { return; }
       if (!target) return;
       e.preventDefault();
       const offset = nav ? nav.offsetHeight + 16 : 80;

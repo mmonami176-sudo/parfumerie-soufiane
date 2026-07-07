@@ -103,6 +103,17 @@ a   { color: inherit; text-decoration: none; }
 
 .btn--sm { padding: .55rem 1.25rem; font-size: .7rem; }
 
+/* ─── Screen-reader only ─── */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* ─── Reveal Animations ─── */
 .reveal {
   opacity: 0;
@@ -637,6 +648,19 @@ a   { color: inherit; text-decoration: none; }
   .footer__inner { flex-direction: column; gap: 2rem; }
 
   .section { padding: 5rem 0; }
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hero__scroll span { animation: none; }
+  .story__frame img,
+  .product__img-wrap img { transition: none; }
+  html { scroll-behavior: auto; }
 }
 
 @media (max-width: 420px) {

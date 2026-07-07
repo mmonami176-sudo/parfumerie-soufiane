@@ -24,11 +24,14 @@
         <li><a href="#atelier">Atelier</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
+
+  <!-- ─── MAIN CONTENT ─── -->
+  <main>
 
   <!-- ─── HERO ─── -->
   <section class="hero" id="home">
@@ -218,20 +221,24 @@
         <p class="newsletter__sub">انضم إلى عالمنا العطري الحصري</p>
         <form class="newsletter__form" id="newsletterForm">
           <div class="newsletter__field">
+            <label for="emailInput" class="sr-only">Votre adresse email</label>
             <input
               type="email"
               placeholder="Votre adresse email"
               class="newsletter__input"
               id="emailInput"
+              autocomplete="email"
               required
             />
             <button type="submit" class="btn btn--gold">S'abonner</button>
           </div>
-          <p class="newsletter__success" id="formSuccess">Merci ! Vous êtes maintenant membre de notre cercle. ✦</p>
+          <p class="newsletter__success" id="formSuccess" role="status" aria-live="polite">Merci ! Vous êtes maintenant membre de notre cercle. ✦</p>
         </form>
       </div>
     </div>
   </section>
+
+  </main><!-- /main -->
 
   <!-- ─── FOOTER ─── -->
   <footer class="footer">
